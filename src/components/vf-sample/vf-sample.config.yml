@@ -1,0 +1,9 @@
+title: Visual Framework Sample Component
+label: Sample Local Component
+preview: '@preview--elements'
+status: beta
+variants:
+  - name: template
+    hidden: true
+context:
+  component-type: element
