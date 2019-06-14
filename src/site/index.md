@@ -4,19 +4,7 @@ date: 2018-08-22 12:24:50
 layout: layouts/base.njk
 ---
 
-<section class="vf-intro | embl-grid embl-grid--has-centered-content">
-<div>
-  <!-- empty -->
-</div>
-<div>
-  <h1 class="vf-intro__heading vf-intro__heading--has-tag">{{ siteConfig.siteInformation.title | safe }} <a href="" class="vf-badge vf-badge--primary vf-badge--phases">alpha</a></h1>
-  <p class="vf-lede">{{ siteConfig.siteInformation.short_description | safe }}</p>
 
-  <p class="vf-intro__text">{{ siteConfig.short_description | safe }}
-
-  (coming soon: dynamic building of just the VF 2.0 CSS and JS in use.)</p>
-</div>
-</section>
 
 
 ## What you get

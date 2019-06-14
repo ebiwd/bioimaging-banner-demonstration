@@ -21,8 +21,6 @@
     "@visual-framework/vf-banner": "0.0.15",
     "@visual-framework/vf-core": "^2.0.0-alpha.5",
     "@visual-framework/vf-divider": "^0.0.30",
-    "@visual-framework/vf-favicon": "0.0.30",
-    "@visual-framework/vf-global-header": "0.0.31",
     "@visual-framework/vf-heading": "^0.0.30",
     "@visual-framework/vf-logo": "^0.0.31",
     "@visual-framework/vf-no-js": "0.0.17",
@@ -60,7 +58,6 @@
     "@visual-framework/vf-form__textarea": "^0.0.27",
     "@visual-framework/vf-grid": "^0.0.31",
     "@visual-framework/vf-grid-page": "^0.0.31",
-    "@visual-framework/vf-intro": "^0.0.30",
     "@visual-framework/vf-lede": "^0.0.6",
     "@visual-framework/vf-text": "^0.0.30",
     "backstopjs": "^4.0.6",
@@ -80,6 +77,7 @@
     "gulp-theo": "^2.0.0",
     "gulp-watch": "^5.0.1",
     "list-stream": "^1.0.1",
-    "rollup-plugin-includepaths": "^0.2.3"
+    "rollup-plugin-includepaths": "^0.2.3",
+    "yo": "^2.0.6"
   }
 }

@@ -15,21 +15,6 @@ gulp.task('watch', function() {
   gulp.watch(['./src/js/**/*.js','./src/js/*.js'], gulp.parallel('js'));
 });
 
-// Copy all vf HBS templates to ./src/site/_includes/components
-// we'll also need to rewrite some contents
-// - frctl you do `{{> '@vf-lede' vf-lede-text=vf-intro_lede}}`
-// - 11ty: `{{> vf-lede vf-lede-text=vf-intro_lede}}` (edited)
-// gulp.task('vf-components', () => {
-//   return gulp
-//     .src(['node_modules/@visual-framework/**/*.njk'])
-//       .pipe(rename(function(path) {
-//         // remove the subdirectory
-//         // vf-heading/vf-heading.hbs => vf-heading.hbs
-//         path.dirname = path.dirname.replace(/vf-.*/g, '');
-//       }))
-//       .pipe(gulp.dest('./src/site/_includes/components'));
-// });
-
 gulp.task('elventy-set-to-serve', function(done) {
   // Since we're not using the 11ty command line directly, we need to set the
   // `--serve` param manually
