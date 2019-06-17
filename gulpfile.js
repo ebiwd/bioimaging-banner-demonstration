@@ -51,7 +51,7 @@ gulp.task('eleventy', function(done) {
 // Let's build this sucker.
 gulp.task('build', gulp.series(
   'vf-clean',
-  gulp.parallel('css','js','vf-css','vf-component-assets'),
+  gulp.parallel('css','js','vf-css', 'vf-scripts','vf-component-assets'),
   'elventy-set-to-build',
   'eleventy'
 ));
@@ -59,8 +59,8 @@ gulp.task('build', gulp.series(
 // Build and watch things during dev
 gulp.task('dev', gulp.series(
   'vf-clean',
-  gulp.parallel('css','js','vf-css','vf-component-assets'),
+  gulp.parallel('css','js','vf-css', 'vf-scripts','vf-component-assets'),
   'elventy-set-to-serve',
   'eleventy',
-  'watch'
+  gulp.parallel('watch','vf-watch')
 ));
