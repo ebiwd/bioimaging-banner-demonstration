@@ -34,11 +34,10 @@ The JS will then add the appropriate content.
    /* Euro-BioImaging banner */
    @import 'vf-bioimaging-banner/vf-bioimaging-banner.scss';
    ```
-
-3. `{% render "@vf-bioimaging-banner" %}`
-
-
-
+3. Insert the HTML template:
+  ```
+  {% render "@vf-bioimaging-banner" %}
+  ```
 
 ## Local development
 
