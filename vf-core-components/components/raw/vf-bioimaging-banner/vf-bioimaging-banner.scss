@@ -1,0 +1,47 @@
+// vf-bioimaging-banner
+
+.vf-bioimaging-banner {
+  margin-bottom: 1rem;
+}
+
+.vf-bioimaging-banner__logo {
+  max-height: 100%;
+}
+
+@media (min-width: 840px) {
+  .vf-bioimaging-banner__message {
+    grid-area: message;
+  }
+  .vf-bioimaging-banner__credit {
+    grid-area: credit;
+  }
+  .vf-bioimaging-banner__content {
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-template-rows: 80px 25px;
+    grid-template-areas:
+      "logo message"
+      ". credit";
+    grid-column-gap: var(--page-grid-gap);
+  }
+
+  .vf-bioimaging-banner__logo {
+    position: relative;
+    top: 12px;
+  }
+}
+
+.vf-bioimaging-banner__credit {
+  text-align: right;
+}
+.vf-bioimaging-banner__credit--text {
+  font-size: 12px;
+}
+
+.vf-bioimaging-banner__credit--logo {
+  height: 25px;
+}
+
+.vf-bioimaging-banner__message--headline {
+  margin-bottom: 0;
+}

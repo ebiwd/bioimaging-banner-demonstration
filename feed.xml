@@ -1,0 +1,24 @@
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Eleventy for Visual Framework 2.0 components</title>
+  <subtitle>This allows using the &lt;a class=&quot;vf-link&quot; href=&quot;https://www.11ty.io&quot;&gt;11ty&lt;/a&gt; static site generator with direct access to &lt;a class=&quot;vf-link&quot; href=&quot;https://github.com/visual-framework/vf-core&quot;&gt;Visual Framework 2.0&lt;/a&gt; components.</subtitle>
+  <link href="https://visual-framework.github.io/bioimaging-banner-demonstration/feed.xml" rel="self"/>
+  <link href="https://ebiwd.github.io/bioimaging-banner-demonstration/"/>
+  <updated>2019-04-09T12:24:50+00:00</updated>
+  <id>https://visual-framework.github.io/bioimaging-banner-demonstration</id>
+  <author>
+    <name>Ken Hawkins</name>
+    <email>ken.hawkins@embl.de</email>
+  </author>
+  
+  <entry>
+    <title>I&#39;m an update</title>
+    <link href="https://visual-framework.github.io/bioimaging-banner-demonstration/posts/sample-post/"/>
+    <updated>2019-04-09T12:24:50+00:00</updated>
+    <id>https://visual-framework.github.io/bioimaging-banner-demonstration/posts/sample-post/</id>
+    <content type="html">&lt;p&gt;I&#39;m some content.&lt;/p&gt;
+</content>
+  </entry>
+</feed>
