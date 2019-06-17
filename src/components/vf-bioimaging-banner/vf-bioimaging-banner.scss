@@ -1,0 +1,19 @@
+// vf-bioimaging-banner
+
+@media (min-width: 840px) {
+  .vf-bioimaging-banner__message {
+    grid-area: message;
+  }
+  .vf-bioimaging-banner__credit {
+    grid-area: credit;
+  }
+  .vf-bioimaging-banner__content {
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-template-rows: 100px 25px;
+    grid-template-areas:
+      "logo message"
+      ". credit";
+    grid-column-gap: var(--page-grid-gap);
+  }
+}

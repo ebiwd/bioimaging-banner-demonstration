@@ -1,0 +1,12 @@
+title: VF Bioimaging banner
+label: Bioimaging banner
+preview: '@preview--elements'
+status: beta
+variants:
+  - name: template
+    hidden: true
+context:
+  component-type: container
+  data_service_id: MyService
+  data-protection-version: 0.1
+  vf-data-protection-banner__text: I agree, dismiss this banner

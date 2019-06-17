@@ -270,6 +270,8 @@ Tel: +44 (0)1223 329 626<br>
 </div>
 </div>
 </div>
+<div class="medium-12 columns analytics-content-footer">
+{% render "@vf-bioimaging-banner", {text: "with some text"} %}
 
 </div>
 </div>

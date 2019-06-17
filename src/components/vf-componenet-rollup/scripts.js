@@ -10,6 +10,8 @@
 import { vfBanner } from 'vf-banner/vf-banner';
 vfBanner();
 
+import { vfBioimagingBanner } from 'vf-bioimaging-banner/vf-bioimaging-banner';
+vfBioimagingBanner();
 
 // import { vfMastheadSetStyle } from 'vf-masthead/vf-masthead';
 // vfMastheadSetStyle();
