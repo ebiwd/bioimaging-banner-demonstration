@@ -23,6 +23,12 @@ The JS will then add the appropriate content.
 
 ### Option 2. As a VF 2.0 component
 
+```
+⚠️ Coming soon: This pattern is     ⚠️
+⚠️ not yet available from `vf-core` ⚠️
+⚠️ Use option 1 for now             ⚠️
+```
+
 If you're using the full Visual Framework ecosystem.
 
 1. Install this component
