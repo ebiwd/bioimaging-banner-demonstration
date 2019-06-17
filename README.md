@@ -1,4 +1,4 @@
-# Eleventy boilerplate for Visual Framework 2.0
+# BioImaging banner demonstration 
 
 This is built with the VF 2.0 architecture for a high level of compatibility with
 other site CSS and JS
