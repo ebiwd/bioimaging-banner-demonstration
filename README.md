@@ -1,17 +1,44 @@
 # Eleventy boilerplate for Visual Framework 2.0
 
-This allows you to use the [11ty](https://www.11ty.io) static site generator
-with direct access to Visual Framework 2.0 components.
+This is built with the VF 2.0 architecture for a high level of compatibility with
+other site CSS and JS
 
-## Cloning this repo
+## Adding the banner to your site
 
-You can clone the files to your project by:
+### Option 1. Manually
 
-- `yarn pack @visual-framework/vf-boilerplate-eleventy`
-- `tar -xzf visual-framework-vf-boilerplate-eleventy-0.0.1.tgz`
-- `cd package`
-- `mv * ..`
-- `cd ..`
+```
+<script src="/vf-eleventy/scripts/scripts.js"></script>
+<link rel="stylesheet" media="all" href="/vf-eleventy/css/styles.css" />
+```
+
+```
+<div data-vf-js-bioimaging-banner class="vf-banner vf-bioimaging-banner vf-banner--static vf-banner--notice">
+  <div class="vf-banner__content vf-bioimaging-banner__content" data-vf-js-bioimaging-banner-text>
+  </div>
+</div>
+```
+
+The JS will then add the appropriate content.
+
+### Option 2. As a VF 2.0 component
+
+1. `yarn add @visual-framework/vf-bioimaging-banner`
+2. Import the JS:
+   ```
+   import { vfBioimagingBanner } from 'vf-bioimaging-banner/vf-bioimaging-banner';
+   vfBioimagingBanner();
+   ```
+3. Import the CSS:
+   ```
+   /* Euro-BioImaging banner */
+   @import 'vf-bioimaging-banner/vf-bioimaging-banner.scss';
+   ```
+
+3. `{% render "@vf-bioimaging-banner" %}`
+
+
+
 
 ## Local development
 
@@ -24,28 +51,3 @@ You'll need to [install npm](https://docs.npmjs.com/downloading-and-installing-n
 3. Generate the site in `/build`
    - `gulp dev` renders and serves
    - `gulp build` build static assets
-
-## Adding Visual Framework components
-
-To add a component you can use npm/Yarn or install it manually.
-
-### By package
-
-- installation: `yarn add @visual-framework/vf-logo`
-- updating components: `yarn upgrade-interactive --latest`
-  - alias: `npm run update-components`
-
-### Manual installation for customisation
-
-1. Download a pattern
-2. Copy it to `./src/components/vf-component-name`
-
-In either case you'll need to re-run `npm run-script dev` to access the pattern.
-
-## Footnotes
-
-- Why `yarn` and not `npm`?
-  For the particular structure of the Visual Framework components, Yarn is considerably
-  faster at installing and does so more efficiently (about half the total file size). You'll
-  also be able to use `yarn upgrade-interactive --latest`, which makes it easier to update
-  VF components.
