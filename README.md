@@ -3,6 +3,8 @@
 This is built with the VF 2.0 architecture for a high level of compatibility with
 other site CSS and JS
 
+[View a demo](https://ebiwd.github.io/bioimaging-banner-demonstration)
+
 ## Adding the banner to your site
 
 ### Option 1. Manually
