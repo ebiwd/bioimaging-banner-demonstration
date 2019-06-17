@@ -8,8 +8,8 @@ other site CSS and JS
 ### Option 1. Manually
 
 ```
-<script src="/vf-eleventy/scripts/scripts.js"></script>
-<link rel="stylesheet" media="all" href="/vf-eleventy/css/styles.css" />
+<script src="/bioimaging-banner-demonstration/scripts/scripts.js"></script>
+<link rel="stylesheet" media="all" href="/bioimaging-banner-demonstration/css/styles.css" />
 ```
 
 ```

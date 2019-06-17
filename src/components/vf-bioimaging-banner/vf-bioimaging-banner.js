@@ -86,14 +86,14 @@ function vfBioimagingBannerInsert(banner,bannerId,scope) {
 
   generatedBannerHtml += `
     <a class="vf-link" href="#">
-      <img class="vf-bioimaging-banner__logo" src="/vf-eleventy/assets/vf-bioimaging-banner/assets/eubi-logo_icon.png" />
+      <img class="vf-bioimaging-banner__logo" src="/bioimaging-banner-demonstration/assets/vf-bioimaging-banner/assets/eubi-logo_icon.png" />
     </a>
     <div class="vf-text | vf-bioimaging-banner__message">
       <div class="vf-text--heading-xl | vf-bioimaging-banner__message--headline">This is a <a class="vf-link" href="JavaScript:Void(0);">Euro-BioImaging</a> connected resource</div>
       <div class="vf-lede"><a href="#" class="vf-link">Learn more</a></div>
     </div>
     <div class="vf-bioimaging-banner__credit | vf-text">
-      <img class="vf-bioimaging-banner__credit--logo" src="/vf-eleventy/assets/vf-bioimaging-banner/assets/BioImage_Archive.png" />
+      <img class="vf-bioimaging-banner__credit--logo" src="/bioimaging-banner-demonstration/assets/vf-bioimaging-banner/assets/BioImage_Archive.png" />
       <span class="vf-text | vf-bioimaging-banner__credit--text">Powered by the <a href="https://www.ebi.ac.uk/bioimage-archive" class="vf-link">BioImage Archive</a></span>
     </div>
   `;

@@ -99,7 +99,7 @@ module.exports = function(config) {
     htmlTemplateEngine : ["njk", "md"],
     markdownTemplateEngine : "njk",
     passthroughFileCopy: true,
-    pathPrefix: "/vf-eleventy/"
+    pathPrefix: "/bioimaging-banner-demonstration/"
   };
 
 };

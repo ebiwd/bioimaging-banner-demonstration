@@ -1,6 +1,6 @@
 {
-  "name": "@visual-framework/vf-boilerplate-eleventy",
-  "version": "0.0.2",
+  "name": "@ebiwd/bioimaging-banner-demonstration",
+  "version": "0.0.1",
   "description": "Build a site with Visual Framework components using the the Eleventy templating engine.",
   "main": "gulpfile.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/visual-framework/vf-eleventy.git"
+    "url": "https://github.com/ebiwd/bioimaging-banner-demonstration.git"
   },
   "author": "Ken Hawkins <ken.hawkins@embl.de> (https://www.embl.de/aboutus/communication_outreach/)",
   "license": "Apache-2.0",
