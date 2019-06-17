@@ -2,9 +2,7 @@
  *
  * styles.css
  * The Visual Framework kitchen sink of styles.
- * Include this style sheet as a quick way to get *everything*,
- * or follow the guide at github.com/visual-framework/vf-core
- * to learn how to build custom and optimised CSS.
+ * Just the bits of the VF needed for the BioImaging banner.
  *
  */
 
@@ -39,10 +37,10 @@ html, button {
 
 /* All Visual Framework grids */
 
-@import 'vf-grid/vf-grid.scss';
-@import 'vf-inlay/vf-inlay.scss';
-@import 'vf-grid-page/vf-grid-page.scss';
-@import 'embl-grid/embl-grid.scss';
+// @import 'vf-grid/vf-grid.scss';
+// @import 'vf-inlay/vf-inlay.scss';
+// @import 'vf-grid-page/vf-grid-page.scss';
+// @import 'embl-grid/embl-grid.scss';
 
 /* All Visual Framework Elements */
 
@@ -50,14 +48,14 @@ html, button {
 @import 'vf-link/vf-link.scss';
   @import 'vf-link/vf-link--primary.scss';
   @import 'vf-link/vf-link--secondary.scss';
-  @import 'vf-link/vf-link--disabled.scss';
+  // @import 'vf-link/vf-link--disabled.scss';
 // @import 'vf-logo/vf-logo.scss';
 // @import 'embl-logo/embl-logo.scss';
 // @import 'vf-form__core/vf-form__core.scss';
 @import 'vf-button/vf-button.scss';
 // @import 'vf-figure/vf-figure.scss';
 @import 'vf-list/vf-list.scss';
-@import 'vf-blockquote/vf-blockquote.scss';
+// @import 'vf-blockquote/vf-blockquote.scss';
 @import 'vf-divider/vf-divider.scss';
 // @import 'embl-conditional-edit/embl-conditional-edit.scss';
 
@@ -73,8 +71,8 @@ html, button {
 // @import 'vf-discussion/vf-discussion.scss';
 
 // @import 'vf-code-example/vf-code-example.scss';
-@import 'vf-page-header/vf-page-header.scss';
-@import 'vf-link-list/vf-link-list.scss';
+// @import 'vf-page-header/vf-page-header.scss';
+// @import 'vf-link-list/vf-link-list.scss';
 // @import 'vf-header/vf-header.scss';
 
 // @import 'vf-lede/vf-lede.scss';
@@ -87,8 +85,8 @@ html, button {
 //   @import 'vf-navigation/vf-navigation--main.scss';
 //   @import 'vf-navigation/vf-navigation--additional.scss';
 
-@import 'vf-section-header/vf-section-header.scss';
-@import 'vf-activity-list/vf-activity-list.scss';
+// @import 'vf-section-header/vf-section-header.scss';
+// @import 'vf-activity-list/vf-activity-list.scss';
 // @import 'vf-article-meta-information/vf-article-meta-information.scss';
 
 // @import 'vf-search/vf-search.scss';
@@ -115,13 +113,13 @@ html, button {
 // @import 'embl-content-hub-loader/embl-content-hub-loader.scss';
 
 @import 'vf-banner/vf-banner.scss';
-  @import 'vf-banner/vf-banner--phase.scss';
+  // @import 'vf-banner/vf-banner--phase.scss';
   @import 'vf-banner/vf-banner--fixed.scss';
-  @import 'vf-banner/vf-banner--gdpr.scss';
+  // @import 'vf-banner/vf-banner--gdpr.scss';
 
 // @import 'vf-news-container/vf-news-container.scss';
 // @import 'vf-video-container/vf-video-container.scss';
-@import 'vf-footer/vf-footer.scss';
+// @import 'vf-footer/vf-footer.scss';
 
 /* All Visual Framework Boilerplates */
 
