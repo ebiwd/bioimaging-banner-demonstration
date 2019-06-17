@@ -23,7 +23,12 @@ The JS will then add the appropriate content.
 
 ### Option 2. As a VF 2.0 component
 
-1. `yarn add @visual-framework/vf-bioimaging-banner`
+If you're using the full Visual Framework ecosystem.
+
+1. Install this component
+   ```
+   yarn add @visual-framework/vf-bioimaging-banner`
+   ```
 2. Import the JS:
    ```
    import { vfBioimagingBanner } from 'vf-bioimaging-banner/vf-bioimaging-banner';
