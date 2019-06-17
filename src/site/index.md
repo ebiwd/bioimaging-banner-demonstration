@@ -270,26 +270,6 @@ Tel: +44 (0)1223 329 626<br>
 </div>
 </div>
 </div>
-<div class="medium-4 columns analytics-content-footer">
-</div>
-</div>
-
-
-<div class="vf-body">
-<div class="vf-grid">
-<div>
-{# render "@vf-bioimaging-banner", {text: "with some text"} #}
 
 </div>
-</div>
-</div>
-
-You'll find a `vf-sample` component there, we've used it below:
-
-<div class="vf-box">
-{% verbatim %}
-Code: {% render "@vf-sample", {text: "with some text"} %}
-{% endverbatim %}
-
-Returns: {% render "@vf-sample", {text: "with some text"} %}
 </div>
