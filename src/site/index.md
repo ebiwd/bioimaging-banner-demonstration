@@ -271,7 +271,16 @@ Tel: +44 (0)1223 329 626<br>
 </div>
 </div>
 <div class="medium-12 columns analytics-content-footer">
-{% render "@vf-bioimaging-banner", {text: "with some text"} %}
+{% render "@vf-bioimaging-banner" %}
+{% verbatim %}
+Code: <pre>{% render "@vf-bioimaging-banner" %}</pre>
+{% endverbatim %}
+
+You can also pass optional colours:
+
+{% verbatim %}
+<pre>{% render "@vf-bioimaging-banner", {color_background: "blue", color_foreground: "orange"} %}</pre>
+{% endverbatim %}
 
 </div>
 </div>

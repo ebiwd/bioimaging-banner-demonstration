@@ -1,5 +1,15 @@
+<!-- You can set custom colours for BioImaging banner,
+     this must come before the html snippet -->
+{% if (color_background) or (color_foreground) %}
+<style>
+:root {
+  {% if color_background %}--vf-bioimaging-banner__color--background: {{ color_background }};{% endif %}
+  {% if color_foreground %}--vf-bioimaging-banner__color--foreground: {{ color_foreground }};{% endif %}
+}
+</style>
+{% endif %}
 
-<!-- persistent banner -->
+<!-- BioImaging banner -->
 <div data-vf-js-bioimaging-banner class="vf-banner vf-bioimaging-banner vf-banner--static vf-banner--notice">
 <div class="vf-banner__content vf-bioimaging-banner__content" data-vf-js-bioimaging-banner-text>
 </div>

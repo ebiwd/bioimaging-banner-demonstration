@@ -7,6 +7,5 @@ variants:
     hidden: true
 context:
   component-type: container
-  data_service_id: MyService
-  data-protection-version: 0.1
-  vf-data-protection-banner__text: I agree, dismiss this banner
+  color_foreground: var(--vf-ui-color-white)
+  color_background: var(--vf-color-gray-dark)

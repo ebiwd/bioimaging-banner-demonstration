@@ -1,4 +1,4 @@
-# BioImaging banner demonstration 
+# BioImaging banner demonstration
 
 This is built with the VF 2.0 architecture for a high level of compatibility with
 other site CSS and JS
@@ -15,6 +15,16 @@ other site CSS and JS
 ```
 
 ```
+<!-- You can set custom colours for BioImaging banner,
+     this must come before the html snippet -->
+<style>
+/*
+:root {
+--vf-bioimaging-banner__color--background: var(--vf-color-gray-dark);
+--vf-bioimaging-banner__color--foreground: var(--vf-ui-color-white);
+}
+*/
+</style>
 <div data-vf-js-bioimaging-banner class="vf-banner vf-bioimaging-banner vf-banner--static vf-banner--notice">
   <div class="vf-banner__content vf-bioimaging-banner__content" data-vf-js-bioimaging-banner-text>
   </div>
@@ -51,6 +61,11 @@ If you're using the full Visual Framework ecosystem.
    ```
    {% render "@vf-bioimaging-banner" %}
    ```
+   or with optional theming:
+   ```
+   {% render "@vf-bioimaging-banner", {color_background: "blue", color_foreground: "orange"} %}
+   ```
+
 
 ## Local development
 
