@@ -10,8 +10,8 @@ other site CSS and JS
 ### Option 1. Manually
 
 ```
-<script src="/bioimaging-banner-demonstration/scripts/scripts.js"></script>
-<link rel="stylesheet" media="all" href="/bioimaging-banner-demonstration/css/styles.css" />
+<script src="https://ebiwd.github.io/bioimaging-banner-demonstration/scripts/scripts.js"></script>
+<link rel="stylesheet" media="all" href="https://ebiwd.github.io/bioimaging-banner-demonstration/css/styles.css" />
 ```
 
 ```
