@@ -157,7 +157,16 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-229dea313b1c3654f5bd7fc066c0e52c-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-comment">&lt;!-- persistent banner --&gt;</span>
+        <pre><span class="hljs-comment">&lt;!-- You can set custom colours for BioImaging banner,
+     this must come before the html snippet --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+    <span class="hljs-selector-pseudo">:root</span> {
+        <span class="hljs-attribute">--vf-bioimaging-banner__color--background</span>: <span class="hljs-built_in">var</span>(--vf-color-gray-dark);
+        <span class="hljs-attribute">--vf-bioimaging-banner__color--foreground</span>: <span class="hljs-built_in">var</span>(--vf-ui-color-white);
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- BioImaging banner --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-vf-js-bioimaging-banner</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-banner vf-bioimaging-banner vf-banner--static vf-banner--notice"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-banner__content vf-bioimaging-banner__content"</span> <span class="hljs-attr">data-vf-js-bioimaging-banner-text</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -169,11 +178,22 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-229dea313b1c3654f5bd7fc066c0e52c-panel-view">
     <code class="Code Code--lang-text">
-        <pre><span class="hljs-comment">&lt;!-- persistent banner --&gt;</span>
+        <pre><span class="xml"><span class="hljs-comment">&lt;!-- You can set custom colours for BioImaging banner,
+     this must come before the html snippet --&gt;</span>
+</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> (color_background) or (color_foreground) %}</span><span class="xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+<span class="hljs-selector-pseudo">:root</span> {
+  </span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> color_background %}</span><span class="xml"><span class="undefined">--vf-bioimaging-banner__color--background: </span></span><span class="hljs-template-variable">{{ color_background }}</span><span class="xml"><span class="undefined">;</span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml"><span class="undefined">
+  </span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> color_foreground %}</span><span class="xml"><span class="undefined">--vf-bioimaging-banner__color--foreground: </span></span><span class="hljs-template-variable">{{ color_foreground }}</span><span class="xml"><span class="undefined">;</span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml"><span class="undefined">
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
+
+<span class="hljs-comment">&lt;!-- BioImaging banner --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-vf-js-bioimaging-banner</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-banner vf-bioimaging-banner vf-banner--static vf-banner--notice"</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"vf-banner__content vf-bioimaging-banner__content"</span> <span class="hljs-attr">data-vf-js-bioimaging-banner-text</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
 </div>
 
@@ -184,9 +204,8 @@
             
             <pre>{
   <span class="hljs-attr">"component-type"</span>: <span class="hljs-string">"container"</span>,
-  <span class="hljs-attr">"data_service_id"</span>: <span class="hljs-string">"MyService"</span>,
-  <span class="hljs-attr">"data-protection-version"</span>: <span class="hljs-number">0.1</span>,
-  <span class="hljs-attr">"vf-data-protection-banner__text"</span>: <span class="hljs-string">"I agree, dismiss this banner"</span>
+  <span class="hljs-attr">"color_foreground"</span>: <span class="hljs-string">"var(--vf-ui-color-white)"</span>,
+  <span class="hljs-attr">"color_background"</span>: <span class="hljs-string">"var(--vf-color-gray-dark)"</span>
 }</pre>
             
         
@@ -266,24 +285,12 @@
 
 
 <span class="hljs-comment">// Turn the below code snippet into a banner</span>
-<span class="hljs-comment">// &lt;div class="vf-banner vf-banner--fixed vf-banner--bottom vf-banner--notice"</span>
-<span class="hljs-comment">// data-vf-js-bioimaging-banner</span>
-<span class="hljs-comment">// data-vf-js-bioimaging-banner-state="persistent|dismissible|blocking" data-vf-js-bioimaging-banner-esc-close="y|n"</span>
-<span class="hljs-comment">// data-vf-js-bioimaging-banner-cookie-name="{{data-service-id}}"</span>
-<span class="hljs-comment">// data-vf-js-bioimaging-banner-cookie-version="{{data-protection-version}}"</span>
-<span class="hljs-comment">// data-vf-js-bioimaging-banner-extra-button="&lt;a href='#'&gt;string1&lt;/a&gt;&lt;a href='#'&gt;string2&lt;/a&gt;"&gt;</span>
-<span class="hljs-comment">//   &lt;div class="vf-banner__content | vf-grid"&gt;</span>
-<span class="hljs-comment">//     &lt;p class="vf-text vf-text--body-l"&gt;</span>
-<span class="hljs-comment">//       This website uses cookies, and the limiting processing of your personal data to function. By using the site you are agreeing to this as outlined in our &lt;a class="vf-link" href="JavaScript:Void(0);"&gt;Privacy Notice&lt;/a&gt; and &lt;a class="vf-link" href="JavaScript:Void(0);"&gt;Terms Of Use&lt;/a&gt;.</span>
-<span class="hljs-comment">//     &lt;/p&gt;</span>
-<span class="hljs-comment">//</span>
-<span class="hljs-comment">//     &lt;button class="vf-button vf-button--secondary"&gt;</span>
-<span class="hljs-comment">//       {{vf-data-protection-banner__link}}</span>
-<span class="hljs-comment">//     &lt;/button&gt;</span>
-<span class="hljs-comment">//   &lt;/div&gt;</span>
-  <span class="hljs-comment">// &lt;/div&gt;</span>
-
-
+<span class="hljs-comment">// &lt;!-- persistent banner --&gt;</span>
+<span class="hljs-comment">// &lt;div data-vf-js-bioimaging-banner class="vf-banner vf-bioimaging-banner vf-banner--static vf-banner--notice"</span>
+<span class="hljs-comment">// style="background-color: #444444"&gt;</span>
+<span class="hljs-comment">// &lt;div class="vf-banner__content vf-bioimaging-banner__content" data-vf-js-bioimaging-banner-text&gt;</span>
+<span class="hljs-comment">// &lt;/div&gt;</span>
+<span class="hljs-comment">// &lt;/div&gt;</span>
 
 <span class="hljs-comment">/**
  * Finds all vf-banner on a page and activates them
@@ -358,7 +365,7 @@
     &lt;/div&gt;
     &lt;div class="vf-bioimaging-banner__credit | vf-text"&gt;
       &lt;img class="vf-bioimaging-banner__credit--logo" src="/bioimaging-banner-demonstration/assets/vf-bioimaging-banner/assets/BioImage_Archive.png" /&gt;
-      &lt;span class="vf-text | vf-bioimaging-banner__credit--text"&gt;Powered by the &lt;a href="https://www.ebi.ac.uk/bioimage-archive" class="vf-link"&gt;BioImage Archive&lt;/a&gt;&lt;/span&gt;
+      &lt;span class="vf-bioimaging-banner__credit--text"&gt;Powered by the &lt;a href="https://www.ebi.ac.uk/bioimage-archive" class="vf-link"&gt;BioImage Archive&lt;/a&gt;&lt;/span&gt;
     &lt;/div&gt;
   `</span>;
 
@@ -385,7 +392,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">4.4 KB</span>
+                    <span class="Meta-value">3.7 KB</span>
                 </li>
             </ul>
         </div>
@@ -400,8 +407,20 @@
                             <code class="Code Code--lang-SCSS FileBrowser-code">
                                 <pre><span class="hljs-comment">// vf-bioimaging-banner</span>
 
+:root {
+  --vf-bioimaging-banner__color--<span class="hljs-attribute">background</span>-default: var(--vf-color-gray-dark);
+  --vf-bioimaging-banner__color--foreground-default: var(--vf-ui-color-white);
+}
+
 <span class="hljs-selector-class">.vf-bioimaging-banner</span> {
   <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">1rem</span>;
+  <span class="hljs-attribute">background</span>: var(--vf-bioimaging-banner__color--background, var(--vf-bioimaging-banner__color--background-default) );
+  <span class="hljs-attribute">color</span>: var(--vf-bioimaging-banner__color--foreground, var(--vf-bioimaging-banner__color--foreground-default) );
+
+  <span class="hljs-selector-class">.vf-text</span> <span class="hljs-selector-class">.vf-link</span>,
+  <span class="hljs-selector-class">.vf-link</span> {
+    <span class="hljs-attribute">color</span>: var(--vf-bioimaging-banner__color--foreground, var(--vf-bioimaging-banner__color--foreground-default) );
+  }
 }
 
 <span class="hljs-selector-class">.vf-bioimaging-banner__logo</span> {
@@ -431,19 +450,23 @@
   }
 }
 
-<span class="hljs-selector-class">.vf-bioimaging-banner__credit</span> {
-  <span class="hljs-attribute">text-align</span>: right;
-}
-<span class="hljs-selector-class">.vf-bioimaging-banner__credit--text</span> {
-  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span>;
+<span class="hljs-selector-class">.vf-bioimaging-banner__message--headline</span> {
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">color</span>: var(--vf-bioimaging-banner__color--foreground, var(--vf-bioimaging-banner__color--foreground-default) );
 }
 
 <span class="hljs-selector-class">.vf-bioimaging-banner__credit--logo</span> {
   <span class="hljs-attribute">height</span>: <span class="hljs-number">25px</span>;
 }
 
-<span class="hljs-selector-class">.vf-bioimaging-banner__message--headline</span> {
-  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>;
+<span class="hljs-selector-class">.vf-bioimaging-banner__credit</span> {
+  <span class="hljs-attribute">text-align</span>: right;
+  <span class="hljs-attribute">color</span>: var(--vf-bioimaging-banner__color--foreground, var(--vf-bioimaging-banner__color--foreground-default) );
+}
+
+<span class="hljs-selector-class">.vf-bioimaging-banner__credit--text</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span>;
+  <span class="hljs-attribute">color</span>: var(--vf-bioimaging-banner__color--foreground, var(--vf-bioimaging-banner__color--foreground-default) );
 }
 </pre>
                             </code>
@@ -461,7 +484,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">835 Bytes</span>
+                    <span class="Meta-value">1.7 KB</span>
                 </li>
             </ul>
         </div>

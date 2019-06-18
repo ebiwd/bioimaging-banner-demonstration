@@ -332,11 +332,20 @@ Tel: +44 (0)1223 329 626<br>
 </div>
 </div>
 <div class="medium-12 columns analytics-content-footer">
-<!-- persistent banner -->
+<!-- You can set custom colours for BioImaging banner,
+     this must come before the html snippet -->
+<style>
+:root {
+--vf-bioimaging-banner__color--background: var(--vf-color-gray-dark);--vf-bioimaging-banner__color--foreground: var(--vf-ui-color-white);}
+</style>
+<!-- BioImaging banner -->
 <div data-vf-js-bioimaging-banner class="vf-banner vf-bioimaging-banner vf-banner--static vf-banner--notice">
 <div class="vf-banner__content vf-bioimaging-banner__content" data-vf-js-bioimaging-banner-text>
 </div>
 </div>
+<p>Code: <pre>{% render &quot;@vf-bioimaging-banner&quot; %}</pre></p>
+<p>You can also pass optional colours:</p>
+<pre>{% render "@vf-bioimaging-banner", {color_background: "blue", color_foreground: "orange"} %}</pre>
 </div>
 </div>
 

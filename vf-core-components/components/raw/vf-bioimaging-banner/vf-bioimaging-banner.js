@@ -2,24 +2,12 @@
 
 
 // Turn the below code snippet into a banner
-// <div class="vf-banner vf-banner--fixed vf-banner--bottom vf-banner--notice"
-// data-vf-js-bioimaging-banner
-// data-vf-js-bioimaging-banner-state="persistent|dismissible|blocking" data-vf-js-bioimaging-banner-esc-close="y|n"
-// data-vf-js-bioimaging-banner-cookie-name="{{data-service-id}}"
-// data-vf-js-bioimaging-banner-cookie-version="{{data-protection-version}}"
-// data-vf-js-bioimaging-banner-extra-button="<a href='#'>string1</a><a href='#'>string2</a>">
-//   <div class="vf-banner__content | vf-grid">
-//     <p class="vf-text vf-text--body-l">
-//       This website uses cookies, and the limiting processing of your personal data to function. By using the site you are agreeing to this as outlined in our <a class="vf-link" href="JavaScript:Void(0);">Privacy Notice</a> and <a class="vf-link" href="JavaScript:Void(0);">Terms Of Use</a>.
-//     </p>
-//
-//     <button class="vf-button vf-button--secondary">
-//       {{vf-data-protection-banner__link}}
-//     </button>
-//   </div>
-  // </div>
-
-
+// <!-- persistent banner -->
+// <div data-vf-js-bioimaging-banner class="vf-banner vf-bioimaging-banner vf-banner--static vf-banner--notice"
+// style="background-color: #444444">
+// <div class="vf-banner__content vf-bioimaging-banner__content" data-vf-js-bioimaging-banner-text>
+// </div>
+// </div>
 
 /**
  * Finds all vf-banner on a page and activates them
@@ -94,7 +82,7 @@ function vfBioimagingBannerInsert(banner,bannerId,scope) {
     </div>
     <div class="vf-bioimaging-banner__credit | vf-text">
       <img class="vf-bioimaging-banner__credit--logo" src="/bioimaging-banner-demonstration/assets/vf-bioimaging-banner/assets/BioImage_Archive.png" />
-      <span class="vf-text | vf-bioimaging-banner__credit--text">Powered by the <a href="https://www.ebi.ac.uk/bioimage-archive" class="vf-link">BioImage Archive</a></span>
+      <span class="vf-bioimaging-banner__credit--text">Powered by the <a href="https://www.ebi.ac.uk/bioimage-archive" class="vf-link">BioImage Archive</a></span>
     </div>
   `;
 
